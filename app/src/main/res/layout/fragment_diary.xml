@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardBreakfast"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="#FFBB66"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@id/cardDinner"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/cardLunch"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageBreakfast"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/cereals" />
+
+        <TextView
+            android:id="@+id/textViewBreakfast"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="35dp"
+            android:rotation="315"
+            android:text="Colazione"
+            android:textAlignment="viewStart"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textViewPlusBreakfast"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="70dp"
+            android:text="+"
+            android:textAlignment="center"
+            android:textColor="#FF8C00"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/buttonBreakfast"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00B100FF" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardLunch"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="#FFE269"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@id/cardSnack"
+        app:layout_constraintLeft_toRightOf="@id/cardBreakfast"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageLunch"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/spaghetti" />
+
+        <TextView
+            android:id="@+id/textViewLunch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="25dp"
+            android:rotation="315"
+            android:text="Pranzo"
+            android:textAlignment="viewStart"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textViewPlusLunch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="70dp"
+            android:text="+"
+            android:textAlignment="center"
+            android:textColor="#FFC219"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/buttonLunch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00FFBB66"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardDinner"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="#7DADFF"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/cardSnack"
+        app:layout_constraintTop_toBottomOf="@id/cardBreakfast" >
+
+        <ImageView
+            android:id="@+id/imageDinner"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/turkey" />
+
+        <TextView
+            android:id="@+id/textViewDinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="25dp"
+            android:rotation="315"
+            android:text="Cena"
+            android:textAlignment="viewStart"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textViewPlusDinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="70dp"
+            android:text="+"
+            android:textAlignment="center"
+            android:textColor="#146AFF"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/buttonDinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00FFBB66"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardSnack"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="#FF9090"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/cardDinner"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardLunch">
+
+        <ImageView
+            android:id="@+id/imageSnack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/apple" />
+
+        <TextView
+            android:id="@+id/textViewSnack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="35dp"
+            android:rotation="315"
+            android:text="Spuntino"
+            android:textAlignment="viewStart"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textViewPlusSnack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="70dp"
+            android:text="+"
+            android:textAlignment="center"
+            android:textColor="#FF2626"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/buttonSnack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00FFBB66"/>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

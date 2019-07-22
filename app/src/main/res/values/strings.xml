@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LooKcal</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Diario</string>
+    <string name="title_notifications">Statistiche</string>
+
+
+</resources>
